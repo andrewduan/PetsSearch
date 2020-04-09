@@ -1,9 +1,0 @@
-/ResearchAndLearn/PetsSearch/PetsSearchCommon/bin/Debug/netcoreapp3.1/PetsSearchCommon.deps.json
-/ResearchAndLearn/PetsSearch/PetsSearchCommon/bin/Debug/netcoreapp3.1/PetsSearchCommon.dll
-/ResearchAndLearn/PetsSearch/PetsSearchCommon/bin/Debug/netcoreapp3.1/PetsSearchCommon.pdb
-/ResearchAndLearn/PetsSearch/PetsSearchCommon/obj/Debug/netcoreapp3.1/PetsSearchCommon.csprojAssemblyReference.cache
-/ResearchAndLearn/PetsSearch/PetsSearchCommon/obj/Debug/netcoreapp3.1/PetsSearchCommon.csproj.CoreCompileInputs.cache
-/ResearchAndLearn/PetsSearch/PetsSearchCommon/obj/Debug/netcoreapp3.1/PetsSearchCommon.AssemblyInfoInputs.cache
-/ResearchAndLearn/PetsSearch/PetsSearchCommon/obj/Debug/netcoreapp3.1/PetsSearchCommon.AssemblyInfo.cs
-/ResearchAndLearn/PetsSearch/PetsSearchCommon/obj/Debug/netcoreapp3.1/PetsSearchCommon.dll
-/ResearchAndLearn/PetsSearch/PetsSearchCommon/obj/Debug/netcoreapp3.1/PetsSearchCommon.pdb
