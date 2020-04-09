@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>517123ad-9981-428e-a28d-4f4c2e3a0b17</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PetsSearchApplication\PetsSearchApplication.csproj" />
+    <ProjectReference Include="..\PetsSearchCommon\PetsSearchCommon.csproj" />
+  </ItemGroup>
+
+
+</Project>

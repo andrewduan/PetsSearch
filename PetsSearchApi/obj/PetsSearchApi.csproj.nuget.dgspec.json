@@ -1,0 +1,207 @@
+{
+  "format": 1,
+  "restore": {
+    "/ResearchAndLearn/PetsSearch/PetsSearchApi/PetsSearchApi.csproj": {}
+  },
+  "projects": {
+    "/ResearchAndLearn/PetsSearch/PetsSearchApi/PetsSearchApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/ResearchAndLearn/PetsSearch/PetsSearchApi/PetsSearchApi.csproj",
+        "projectName": "PetsSearchApi",
+        "projectPath": "/ResearchAndLearn/PetsSearch/PetsSearchApi/PetsSearchApi.csproj",
+        "packagesPath": "/Users/jingjingshi/.nuget/packages/",
+        "outputPath": "/ResearchAndLearn/PetsSearch/PetsSearchApi/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jingjingshi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/ResearchAndLearn/PetsSearch/PetsSearchApplication/PetsSearchApplication.csproj": {
+                "projectPath": "/ResearchAndLearn/PetsSearch/PetsSearchApplication/PetsSearchApplication.csproj"
+              },
+              "/ResearchAndLearn/PetsSearch/PetsSearchCommon/PetsSearchCommon.csproj": {
+                "projectPath": "/ResearchAndLearn/PetsSearch/PetsSearchCommon/PetsSearchCommon.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.9.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/ResearchAndLearn/PetsSearch/PetsSearchApplication/PetsSearchApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/ResearchAndLearn/PetsSearch/PetsSearchApplication/PetsSearchApplication.csproj",
+        "projectName": "PetsSearchApplication",
+        "projectPath": "/ResearchAndLearn/PetsSearch/PetsSearchApplication/PetsSearchApplication.csproj",
+        "packagesPath": "/Users/jingjingshi/.nuget/packages/",
+        "outputPath": "/ResearchAndLearn/PetsSearch/PetsSearchApplication/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jingjingshi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/ResearchAndLearn/PetsSearch/PetsSearchCommon/PetsSearchCommon.csproj": {
+                "projectPath": "/ResearchAndLearn/PetsSearch/PetsSearchCommon/PetsSearchCommon.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/ResearchAndLearn/PetsSearch/PetsSearchCommon/PetsSearchCommon.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/ResearchAndLearn/PetsSearch/PetsSearchCommon/PetsSearchCommon.csproj",
+        "projectName": "PetsSearchCommon",
+        "projectPath": "/ResearchAndLearn/PetsSearch/PetsSearchCommon/PetsSearchCommon.csproj",
+        "packagesPath": "/Users/jingjingshi/.nuget/packages/",
+        "outputPath": "/ResearchAndLearn/PetsSearch/PetsSearchCommon/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jingjingshi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
