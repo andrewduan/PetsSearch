@@ -1,16 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using PetsSearchApplication.Constants;
+using PetsSearchApplication.Dtos;
+using PetsSearchApplication.Interfaces;
 
-namespace PetsSearchApplication.Interfaces
+namespace PetsSearchApplication.Implements
 {
-    public interface IPetsService
-    {
-        Task<IEnumerable<PetsDto>> GetAllAsync();
-    }
-
     public class PetsService : IPetsService
     {
         private readonly IHttpClient _httpClient;

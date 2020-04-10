@@ -5,7 +5,8 @@ using AutoFixture.AutoMoq;
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using PetsSearchApplication;
+using PetsSearchApplication.Constants;
+using PetsSearchApplication.Dtos;
 using PetsSearchApplication.Interfaces;
 
 namespace PetsSearchTests

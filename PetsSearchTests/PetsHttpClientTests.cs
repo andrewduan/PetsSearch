@@ -1,4 +1,5 @@
 using Moq;
+using PetsSearchApplication.Implements;
 using PetsSearchApplication.Interfaces;
 using PetsSearchApplication.Settings;
 using PetsSearchCommon;

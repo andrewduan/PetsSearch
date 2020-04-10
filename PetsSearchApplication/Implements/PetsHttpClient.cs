@@ -1,17 +1,14 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using PetsSearchApplication.Interfaces;
 using PetsSearchApplication.Settings;
 using PetsSearchCommon;
 
-namespace PetsSearchApplication.Interfaces
+namespace PetsSearchApplication.Implements
 {
-    public interface IHttpClient
-    {
-        Task<string> GetContentAsync(string url);
-    }
-
+    
     public class PetsHttpClient : IHttpClient
     {
         private readonly Uri _baseAddress;

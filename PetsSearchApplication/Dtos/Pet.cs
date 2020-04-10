@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
+using PetsSearchApplication.Constants;
 
-namespace PetsSearchApplication
+namespace PetsSearchApplication.Dtos
 {
     public class Pet
     {
@@ -17,5 +18,5 @@ namespace PetsSearchApplication
         }
     }
 
-    
+
 }

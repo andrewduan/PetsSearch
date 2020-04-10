@@ -1,4 +1,4 @@
-﻿namespace PetsSearchApplication
+﻿namespace PetsSearchApplication.Constants
 {
     public enum PetTypeEnum
     {
