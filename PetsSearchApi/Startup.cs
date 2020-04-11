@@ -20,9 +20,14 @@ namespace PetsSearchApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(c =>  
+            {  
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());  
+            });
+
             services.AddControllers();
 
-            Bootstrap.Configure(services, Configuration);
+            Bootstrap.Configure(services, Configuration);            
 
             ConfigureMvc(services);
         }
@@ -34,6 +39,7 @@ namespace PetsSearchApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(options => options.AllowAnyOrigin());  
 
             app.UseHttpsRedirection();
 
