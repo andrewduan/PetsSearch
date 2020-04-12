@@ -5,7 +5,7 @@ using PetsSearchCommon;
 using Shouldly;
 using Xunit;
 
-namespace PetsSearchTests
+namespace PetsSearchTests.Unit
 {
     public class PetsHttpClientTests
     {

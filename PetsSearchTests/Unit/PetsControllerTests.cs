@@ -11,7 +11,7 @@ using PetsSearchApplication.Implements;
 using Shouldly;
 using Xunit;
 
-namespace PetsSearchTests
+namespace PetsSearchTests.Unit
 {
     public class PetsControllerTests : TestsBase
     {

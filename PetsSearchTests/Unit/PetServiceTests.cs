@@ -9,7 +9,7 @@ using PetsSearchApplication.Interfaces;
 using Shouldly;
 using Xunit;
 
-namespace PetsSearchTests
+namespace PetsSearchTests.Unit
 {
     public class PetServiceTests : TestsBase
     {

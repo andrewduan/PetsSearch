@@ -9,7 +9,7 @@ using PetsSearchApplication.Constants;
 using PetsSearchApplication.Dtos;
 using PetsSearchApplication.Interfaces;
 
-namespace PetsSearchTests
+namespace PetsSearchTests.Unit
 {
     public abstract class TestsBase : IDisposable
     {
