@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators, Dispatch, AnyAction } from 'redux'
+import { bindActionCreators, Dispatch } from 'redux'
 
-import * as petsActions from '../actions/pets';
-import  FilteredPetsGroup  from '../containers/FilteredPetsGroup'
-import { PetsState, PetsModel } from '../actions/models';
+import * as PetsAction from '../actions/pets';
+import  PetsGroup  from '../components/PetsGroup'
+import { PetsState } from '../actions/models';
 
 const getAllPetsGroupsRelay = () => async (dispatch: Dispatch<any>) => {
-    setTimeout(() => dispatch(petsActions.getAllPetsGroups()), 1000);
+    setTimeout(() => dispatch(PetsAction.getAllPetsGroups()), 1000);
 };
 
 const mapDispatchToProps = (dispatch: Dispatch) =>
@@ -22,11 +22,6 @@ type Props = ReturnType<typeof mapStateToProps> & ReturnType<typeof mapDispatchT
 const States = {value: ""};
 
 class HomePage extends React.Component<Props, typeof States> {
-
-    constructor(props: Props){
-        super(props)
-    }
-
     async componentDidMount() {
         this.props.getAllPetsGroups();        
     }
@@ -35,10 +30,10 @@ class HomePage extends React.Component<Props, typeof States> {
         const { isFetching, error, petsGroups } = this.props;
         return (
             <div className="w-100">
-                <p>Here are the pets result</p>
+                <p>Here are the cats</p>
                 {isFetching && <em>Loading Pets...</em>}
                 {error && <span className="text-danger">ERROR: error happened when retrieving pets</span>}
-                <FilteredPetsGroup petsGroups = {petsGroups}></FilteredPetsGroup>
+                <PetsGroup petsGroups = {petsGroups}></PetsGroup>
             </div>
         );
     }
