@@ -14,8 +14,8 @@ class PetsGroup extends Component<Props> {
         return (<li key={`${idx}${index}`}>{name}</li>);
       });
       return (
-        <div key={`${idx}p`}>
-          <div key={`${idx}c`}>{gender}</div>
+        <div key={`gender${idx}`}>
+          <div>{gender}</div>
           <ul key={idx}>{listItems}</ul>
         </div>
       );

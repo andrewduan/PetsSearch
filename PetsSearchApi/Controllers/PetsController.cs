@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PetsSearchApplication.Constants;
 using PetsSearchApplication.Interfaces;
 
 namespace PetsSearchApi.Controllers
@@ -17,7 +18,15 @@ namespace PetsSearchApi.Controllers
         [HttpGet("")]
         public async Task<IActionResult> GetAsync()
         {
-            var petsDto = await _service.GetAllAsync();
+            var petsDto = await _service.GetAllAsync(PetTypeEnum.Cat);
+
+            return Ok(petsDto);
+        }
+
+        [HttpGet("{category:petTypeEnum}")]
+        public async Task<IActionResult> GetProductsByCategory(PetTypeEnum category)
+        {
+            var petsDto = await _service.GetAllAsync(category);
 
             return Ok(petsDto);
         }

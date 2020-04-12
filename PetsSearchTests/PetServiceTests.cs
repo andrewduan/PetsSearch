@@ -22,7 +22,7 @@ namespace PetsSearchTests
             var sut = Fixture.Create<PetsService>();
 
             // Act
-            var result = await sut.GetAllAsync();
+            var result = await sut.GetAllAsync(PetTypeEnum.Cat);
 
             // Assert
             result.Count().ShouldBe(expectCount);
@@ -37,7 +37,7 @@ namespace PetsSearchTests
             var sut = Fixture.Create<PetsService>();
 
             // Act
-            var result = (await sut.GetAllAsync()).ToList();
+            var result = (await sut.GetAllAsync(PetTypeEnum.Cat)).ToList();
 
             // Assert
             result.Count.ShouldBe(expectedNumberOfOwner);

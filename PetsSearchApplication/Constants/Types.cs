@@ -4,7 +4,8 @@
     {
         Dog,
         Cat,
-        Fish
+        Fish,
+        All
     }
 
     public enum GenderEnum
@@ -12,4 +13,8 @@
         Male,
         Female
     }
+
+    public static class CustomerRouteType {
+        public const string Name = "petTypeEnum";
+    }    
 }

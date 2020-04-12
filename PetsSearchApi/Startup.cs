@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PetsSearchApi.Filter;
 using PetsSearchApplication;
+using PetsSearchApplication.Constants;
 
 namespace PetsSearchApi
 {
@@ -23,6 +25,11 @@ namespace PetsSearchApi
             services.AddCors(c =>  
             {  
                 c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());  
+            });
+
+            services.Configure<RouteOptions>(options =>
+            {
+                options.ConstraintMap.Add(CustomerRouteType.Name, typeof(PetsRouteConstraint));
             });
 
             services.AddControllers();

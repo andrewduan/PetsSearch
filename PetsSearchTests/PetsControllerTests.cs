@@ -8,7 +8,6 @@ using PetsSearchApi.Controllers;
 using PetsSearchApplication.Constants;
 using PetsSearchApplication.Dtos;
 using PetsSearchApplication.Implements;
-using PetsSearchApplication.Interfaces;
 using Shouldly;
 using Xunit;
 
@@ -28,7 +27,7 @@ namespace PetsSearchTests
         {
             // Arrange
             HttpClient.Setup(c => c.GetContentAsync(It.IsAny<string>())).ReturnsAsync("");
-            PetsService.Setup(c => c.GetAllAsync()).ReturnsAsync(new List<PetsDto>());
+            PetsService.Setup(c => c.GetAllAsync(PetTypeEnum.Cat)).ReturnsAsync(new List<PetsDto>());
             var sut = new PetsController(PetsService.Object);
 
             // Act
@@ -78,7 +77,7 @@ namespace PetsSearchTests
         public void GivenExceptionThrownFromPetService_ShouldThrowExceptionInContoller()
         {
             // Arrange
-            PetsService.Setup(c => c.GetAllAsync()).Throws(new Exception("some exception happened"));
+            PetsService.Setup(c => c.GetAllAsync(PetTypeEnum.Cat)).Throws(new Exception("some exception happened"));
 
             var sut = new PetsController(PetsService.Object);
 
