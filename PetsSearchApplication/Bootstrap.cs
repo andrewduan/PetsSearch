@@ -21,7 +21,7 @@ namespace PetsSearchApplication
         {
             var section = configuration.GetSection("AppSettings");
             var baseUrl = section["BaseUrl"];
-            services.TryAddScoped(x => new UriSetting(baseUrl));
+            services.AddSingleton(typeof(UriSetting), new UriSetting(baseUrl));
         }
     }
 }
