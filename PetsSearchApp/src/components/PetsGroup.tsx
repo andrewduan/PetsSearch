@@ -15,7 +15,7 @@ class PetsGroup extends Component<Props> {
       });
       return (
         <div key={`gender${idx}`}>
-          <div>{gender}</div>
+          <div className="gender">{gender}</div>
           <ul key={idx}>{listItems}</ul>
         </div>
       );

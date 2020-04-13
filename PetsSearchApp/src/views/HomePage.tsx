@@ -19,9 +19,8 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
   );
 
 type Props = ReturnType<typeof mapStateToProps> & ReturnType<typeof mapDispatchToProps> ;
-const States = {value: ""};
 
-class HomePage extends React.Component<Props, typeof States> {
+class HomePage extends React.Component<Props> {
     async componentDidMount() {
         this.props.getAllPetsGroups();        
     }
