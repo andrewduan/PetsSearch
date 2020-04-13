@@ -10,8 +10,6 @@ To run it,
    Additionally you can call http://localhost:5000/pets/dog, http://localhost:5000/pets/fish, or http://localhost:5000/pets/all
    to get `dogs`, `fish` and `all pets`.
 
-   Whole project is under `unit test` and `E2E test`.
-
 2. WebApp: this app is using React, Redux and Typescript. To run it, go to folder `/PetSearchApp`, run `npm install` followed by `npm start`, the webserver
    http://localhost:3000 will be running. Enter http://localhost:3000 to Browser, the cats will show in script, grouped by owner's gender.
 
