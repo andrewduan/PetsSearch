@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
 using PetsSearchApi.Filter;
 using PetsSearchApplication;
 using PetsSearchApplication.Constants;
@@ -60,13 +61,15 @@ namespace PetsSearchApi
             });
         }
 
-        private void ConfigureMvc(IServiceCollection services)
-        {
-            services.AddMvc(options =>
+        private void ConfigureMvc(IServiceCollection services) => services
+                .AddMvc(options =>
                 {
                     options.EnableEndpointRouting = false;
                     options.Filters.Add(typeof(ExceptionFilter));
+                })
+                .AddNewtonsoftJson(options =>{
+                    options.UseCamelCasing(true);
+                    options.SerializerSettings.Formatting = Formatting.Indented;
                 });
-        }
     }
 }
