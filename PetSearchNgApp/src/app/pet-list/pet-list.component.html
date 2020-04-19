@@ -1,0 +1,11 @@
+<h2>Pets</h2>
+<div *ngFor="let petsGroup of petsGroups">
+
+    <div>
+        <div class="gender">{{petsGroup.gender}}</div>
+        <ul  *ngFor="let pet of petsGroup.petNames">
+            <li>{{pet}}</li>
+        </ul>
+      </div>
+  
+  </div>
